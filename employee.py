@@ -44,7 +44,7 @@ class Employee:
         midstr=""
 
         if(self.hasCommission and self.hasComContract ):
-            midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and recieves a commission for {self.contractNo} contract(s) at {self.commissionPay}/contract.  Their total pay is { self.get_pay() }." )
+            midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and receives a commission for {self.contractNo} contract(s) at {self.commissionPay}/contract.  Their total pay is { self.get_pay() }." )
         elif(self.hasCommission and not self.hasComContract):
             midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and receives a bonus commission of {self.commissionPay}.  Their total pay is {self.get_pay()}." )
         else:
@@ -58,7 +58,7 @@ class Employee:
         if(self.hasCommission and self.hasComContract):
             midstr = ( f"{self.name} works on a monthly salary of {self.pay} and receives a commission for {self.contractNo} contract(s) at {self.commissionPay}/contract.  Their total pay is { self.get_pay() }." )
         elif(self.hasCommission and not self.hasComContract):
-            midstr = ( f"{self.name} works on a monthly salary of {self.pay} and recieves a bonus commission of {self.commissionPay}.  Their total pay is { self.get_pay() }." )
+            midstr = ( f"{self.name} works on a monthly salary of {self.pay} and receives a bonus commission of {self.commissionPay}.  Their total pay is { self.get_pay() }." )
         else:
             midstr = ( f"{self.name} works on a monthly salary of {self.pay}.  Their total pay is {self.get_pay()}.")
         return midstr
