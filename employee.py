@@ -85,19 +85,19 @@ class SalaryCommissionEmployee(SalaryEmployee):
 billie = SalaryEmployee('Billie', 4000)
 
 # Charlie works on a contract of 100 contractHours at 25/hour.  Their total pay is 2500.
-charlie = ContractEmployee('Charlie', 25, 100)
+charlie = ContractEmployee('Charlie', 100, 25)
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
 renee = SalaryCommissionEmployee('Renee', 3000, 4, 200)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = ContractCommissionEmployee('Jan', 25, 150, 3, 220)
+jan = ContractCommissionEmployee('Jan', 150, 25, 3, 220)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = SalaryBonusEmployee('Robbie', 2000, 1500)
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
-ariel = ContractBonusEmployee('Ariel', 30, 120, 600)
+ariel = ContractBonusEmployee('Ariel', 120, 30, 600)
 
 
 print(str(renee))
