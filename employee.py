@@ -46,9 +46,9 @@ class Employee:
         if(self.hasCommission and self.hasComContract ):
             midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and recieves a commission for {self.contractNo} contract(s) at {self.commissionPay}/contract.  Their total pay is { self.get_pay() }." )
         elif(self.hasCommission and not self.hasComContract):
-            midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and receives a bonus commission of {self.commissionPay}. Their total pay is {self.get_pay()}." )
+            midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and receives a bonus commission of {self.commissionPay}.  Their total pay is {self.get_pay()}." )
         else:
-            midstr = ( f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour. Their total pay is {self.get_pay()}")
+            midstr = ( f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour.  Their total pay is {self.get_pay()}")
 
         return midstr
 
@@ -58,9 +58,9 @@ class Employee:
         if(self.hasCommission and self.hasComContract):
             midstr = ( f"{self.name} works on a monthly salary of {self.pay} and receives a commission for {self.contractNo} contract(s) at {self.commissionPay}/contract.  Their total pay is { self.get_pay() }." )
         elif(self.hasCommission and not self.hasComContract):
-            midstr = ( f"{self.name} works on a monthly salary of {self.pay} and recieves a bonus commission of {self.commissionPay}. Their total pay is { self.get_pay() }." )
+            midstr = ( f"{self.name} works on a monthly salary of {self.pay} and recieves a bonus commission of {self.commissionPay}.  Their total pay is { self.get_pay() }." )
         else:
-            midstr = ( f"{self.name} works on a monthly salary of {self.pay}. Their total pay is {self.get_pay()}.")
+            midstr = ( f"{self.name} works on a monthly salary of {self.pay}.  Their total pay is {self.get_pay()}.")
         return midstr
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
@@ -81,5 +81,5 @@ robbie = Employee('Robbie', False, None, 2000, True, False, None, 1500)
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel', True, 120, 30, True, False, None, 600)
 
-# print(billie.get_pay())
+#print(billie.get_pay())
 #print (str(billie))
