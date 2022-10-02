@@ -48,7 +48,7 @@ class Employee:
         elif(self.hasCommission and not self.hasComContract):
             midstr = (f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour and receives a bonus commission of {self.commissionPay}.  Their total pay is {self.get_pay()}." )
         else:
-            midstr = ( f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour.  Their total pay is {self.get_pay()}")
+            midstr = ( f"{self.name} works on a contract of {self.contractHours} hours at {self.pay}/hour.  Their total pay is {self.get_pay()}.")
 
         return midstr
 
